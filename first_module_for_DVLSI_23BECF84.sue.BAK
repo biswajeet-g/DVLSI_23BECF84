@@ -1,0 +1,7 @@
+proc SCHEMATIC_first_module_for_DVLSI_23BECF84 {} {
+make output -name out -origin {530 160}
+ make_text -origin {410 120} -text {NOTE:  THIS MODULE WILL BE AUTOMATICALLY
+            DELETED ONCE YOU CREATE YOUR OWN
+            MODULE WITHIN THIS LIBRARY
+            (DELETION OCCURS UPON RESTARTING SUE2)}
+}

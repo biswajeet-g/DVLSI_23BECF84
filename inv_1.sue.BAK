@@ -1,0 +1,27 @@
+proc SCHEMATIC_inv_1 {} {
+make pmos4 -name M0 -origin {1370 200}
+make nmos4 -name M1 -origin {1370 450}
+make output -name Vout -origin {1470 320}
+make input -name Vin -origin {1120 330}
+make inout -name Vdd -origin {1370 50}
+make inout -name Gnd -origin {1370 550}
+  make_wire 1310 200 1200 200
+  make_wire 1200 450 1310 450
+  make_wire 1200 330 1120 330
+  make_wire 1370 320 1470 320
+  make_wire 1370 520 1430 520
+  make_wire 1430 520 1430 450
+  make_wire 1430 450 1370 450
+  make_wire 1370 520 1370 490
+  make_wire 1370 520 1370 550
+  make_wire 1370 240 1370 320
+  make_wire 1370 320 1370 410
+  make_wire 1200 200 1200 330
+  make_wire 1200 330 1200 450
+  make_wire 1370 100 1440 100
+  make_wire 1440 100 1440 200
+  make_wire 1440 200 1370 200
+  make_wire 1370 50 1370 100
+  make_wire 1370 100 1370 160
+}
+

@@ -1,0 +1,65 @@
+proc SCHEMATIC_nand_1_sue {} {
+make pmos4 -name M0 -origin {660 320}
+make nmos4 -name M1 -origin {720 570}
+make nmos4 -name M2 -origin {720 750}
+make input -name A -origin {480 320}
+make inout -name Vdd -origin {720 160}
+make input -orient RXY -name B -origin {940 320}
+make output -name Vout -origin {810 490}
+make pmos4 -orient RX -name M3 -origin {780 320}
+make inout -name Gnd -origin {720 820}
+  make_wire 660 360 660 460
+  make_wire 780 460 780 360
+  make_wire 660 280 660 220
+  make_wire 780 220 780 280
+  make_wire 720 220 720 160
+  make_wire 660 570 540 570
+  make_wire 540 570 540 320
+  make_wire 540 320 480 320
+  make_wire 540 320 600 320
+  make_wire 720 490 810 490
+  make_wire 720 490 720 530
+  make_wire 720 490 720 460
+  make_wire 720 610 720 710
+  make_wire 660 750 550 750
+  make_wire 550 750 550 870
+  make_wire 550 870 880 870
+  make_wire 880 320 840 320
+  make_wire 880 320 940 320
+  make_wire 720 320 660 320
+  make_wire 720 320 780 320
+  make_wire 720 570 790 570
+  make_wire 790 800 720 800
+  make_wire 720 800 720 790
+  make_wire 720 800 720 820
+  make_wire 720 750 790 750
+  make_wire 790 750 790 570
+  make_wire 790 750 790 800
+  make_wire 880 320 880 870
+  make_wire 720 220 720 320
+  make_wire 660 220 720 220
+  make_wire 720 220 780 220
+  make_wire 660 460 720 460
+  make_wire 720 460 780 460
+}
+
+proc ICON_nand_1_sue args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x} {example_param 1.0}}
+icon_term -type input -origin {-100 -10} -name A
+icon_term -type input -origin {-100 10} -name B
+icon_term -type output -origin {100 -10} -name Vout
+icon_term -type inout -origin {100 30} -name Vdd
+icon_term -type inout -origin {100 50} -name Gnd
+icon_property -origin {-90 -10} -label A
+icon_property -origin {-90 10} -label B
+icon_property -origin {90 -10} -anchor e -label Vout
+icon_property -origin {90 30} -anchor e -label Vdd
+icon_property -origin {90 50} -anchor e -label Gnd
+icon_property -origin {-90 -60} -label {$name}
+icon_property -origin {-90 -40} -label nand_1_sue
+  icon_line -100 -50 100 -50 100 70 -100 70 -100 -50
+icon_property -origin {-90 80} -label {example_param=$example_param}
+  icon_property -origin {-90 140} -type user -name name -default x
+  icon_property -origin {-90 160} -type user -name example_param -default 1.0
+}
+

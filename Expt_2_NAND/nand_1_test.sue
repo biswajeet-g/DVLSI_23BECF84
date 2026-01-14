@@ -1,0 +1,30 @@
+proc SCHEMATIC_nand_1_test {} {
+make input -name A -origin {-210 60}
+make input -name B -origin {-210 80}
+make output -name Vout -origin {230 60}
+make pulse -name B_pulse -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {-160 170}
+make global -name Gnd -origin {40 270}
+make global -name Vdd -origin {300 130}
+make pulse -orient RY -name A_pulse -pulse_voltage 1.3V -origin {-160 -20}
+make nand_1_sue -name xi0 -origin {30 70}
+  make_wire 130 60 230 60
+  make_wire 130 100 300 100
+  make_wire -160 130 -160 80
+  make_wire -160 80 -70 80
+  make_wire -160 80 -210 80
+  make_wire -160 60 -210 60
+  make_wire -160 60 -70 60
+  make_wire -270 -90 -270 240
+  make_wire 40 240 40 270
+  make_wire -160 210 -160 240
+  make_wire 130 120 240 120
+  make_wire 240 120 240 240
+  make_wire 240 240 40 240
+  make_wire 300 100 300 130
+  make_wire -160 -90 -160 -60
+  make_wire -270 240 -160 240
+  make_wire -160 240 40 240
+  make_wire -270 -90 -160 -90
+  make_wire -160 20 -160 60
+}
+

@@ -2,8 +2,8 @@
 
 ## Schematic Diagram 1
 
-<img width="1366" height="768" alt="Screenshot (804)" src="https://github.com/user-attachments/assets/a5b9542a-55bf-4d73-83ad-
-157475c79abb" />
+<img width="1366" height="768" alt="Screenshot (804)" src="https://github.com/user-attachments/assets/ffe72709-b802-4659-adc1-cce3762f1c31" />
+
 
 
 ## Schematic Diagram 2

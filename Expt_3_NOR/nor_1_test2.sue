@@ -1,0 +1,30 @@
+proc SCHEMATIC_nor_1_test2 {} {
+make input -name A -origin {-250 50}
+make input -name B -origin {-260 70}
+make output -name vout -origin {340 50}
+make global -name vdd -origin {340 120}
+make global -name gnd -origin {10 350}
+make nor_2 -name xi0 -origin {60 60}
+make pulse -orient RY -name V0 -pulse_voltage 1.3V -origin {-150 -30}
+make pulse -name V1 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {-150 160}
+  make_wire 160 50 340 50
+  make_wire 160 90 340 90
+  make_wire 340 90 340 120
+  make_wire -150 10 -150 50
+  make_wire -150 50 -40 50
+  make_wire -150 50 -250 50
+  make_wire -150 120 -150 70
+  make_wire -150 70 -40 70
+  make_wire -150 70 -260 70
+  make_wire -150 -70 -150 -140
+  make_wire -150 -140 -370 -140
+  make_wire -370 -140 -370 280
+  make_wire 290 280 290 110
+  make_wire 290 110 160 110
+  make_wire -150 200 -150 280
+  make_wire -150 280 -370 280
+  make_wire 10 350 10 280
+  make_wire 10 280 -150 280
+  make_wire 10 280 290 280
+}
+

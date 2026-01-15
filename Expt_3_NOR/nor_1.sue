@@ -1,0 +1,54 @@
+proc SCHEMATIC_nor_1 {} {
+make input -name A -origin {-210 30}
+make input -name B -origin {-210 180}
+make inout -name vdd -origin {50 -120}
+make inout -name gnd -origin {70 630}
+make pmos4 -name M4_pmos -origin {50 30}
+make pmos4 -name M3_pmos -origin {50 180}
+make nmos4 -name M1_nmos -origin {-170 420}
+make nmos4 -orient RX -name M2_nmos -origin {280 420}
+make output -name vout -origin {250 260}
+  make_wire 280 310 280 380
+  make_wire -170 380 -170 310
+  make_wire -170 310 50 310
+  make_wire 50 310 280 310
+  make_wire -170 460 -170 560
+  make_wire 280 560 280 460
+  make_wire 70 560 70 630
+  make_wire 70 560 280 560
+  make_wire -230 420 -410 420
+  make_wire -410 420 -410 -110
+  make_wire -410 -110 -120 -110
+  make_wire -120 -110 -120 30
+  make_wire -120 30 -10 30
+  make_wire -120 30 -210 30
+  make_wire 340 420 450 420
+  make_wire 450 420 450 -200
+  make_wire 450 -200 -300 -200
+  make_wire -300 -200 -300 110
+  make_wire -300 110 -130 110
+  make_wire -130 180 -210 180
+  make_wire -130 180 -10 180
+  make_wire 60 420 60 560
+  make_wire 60 560 70 560
+  make_wire -170 560 60 560
+  make_wire 60 420 -170 420
+  make_wire 60 420 280 420
+  make_wire 50 30 180 30
+  make_wire 180 30 180 -50
+  make_wire 180 -50 50 -50
+  make_wire 50 -50 50 -10
+  make_wire 50 -50 50 -120
+  make_wire -130 110 -130 180
+  make_wire 50 70 50 140
+  make_wire 50 180 180 180
+  make_wire 180 180 180 30
+  make_wire 50 260 250 260
+  make_wire 50 260 50 220
+  make_wire 50 260 50 310
+}
+
+proc ICON_nor_1 args {
+  icon_setup $args {{origin {0 0}} {orient R0}}
+}
+

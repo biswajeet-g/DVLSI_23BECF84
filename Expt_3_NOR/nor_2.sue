@@ -1,0 +1,70 @@
+proc SCHEMATIC_nor_2 {} {
+make input -name A -origin {-340 -270}
+make input -name B -origin {-340 -120}
+make inout -name vdd -origin {-80 -420}
+make inout -name gnd -origin {-60 330}
+make output -name vout -origin {120 -40}
+make pmos4 -name M0 -origin {-80 -270}
+make pmos4 -name M1 -origin {-80 -120}
+make nmos4 -name M2 -origin {-300 120}
+make nmos4 -orient RX -name M3 -origin {150 120}
+  make_wire 150 10 150 80
+  make_wire -300 80 -300 10
+  make_wire -300 10 -80 10
+  make_wire -80 10 150 10
+  make_wire -300 160 -300 260
+  make_wire 150 260 150 160
+  make_wire -60 260 -60 330
+  make_wire -60 260 150 260
+  make_wire -360 120 -540 120
+  make_wire -540 120 -540 -410
+  make_wire -540 -410 -250 -410
+  make_wire -250 -410 -250 -270
+  make_wire -250 -270 -140 -270
+  make_wire -250 -270 -340 -270
+  make_wire 210 120 320 120
+  make_wire 320 120 320 -500
+  make_wire 320 -500 -430 -500
+  make_wire -430 -500 -430 -190
+  make_wire -430 -190 -260 -190
+  make_wire -260 -120 -340 -120
+  make_wire -260 -120 -140 -120
+  make_wire -70 120 -70 260
+  make_wire -70 260 -60 260
+  make_wire -300 260 -70 260
+  make_wire -70 120 -300 120
+  make_wire -70 120 150 120
+  make_wire -80 -270 50 -270
+  make_wire 50 -270 50 -350
+  make_wire 50 -350 -80 -350
+  make_wire -80 -350 -80 -310
+  make_wire -80 -350 -80 -420
+  make_wire -260 -190 -260 -120
+  make_wire -80 -230 -80 -160
+  make_wire -80 -120 50 -120
+  make_wire 50 -120 50 -270
+  make_wire -80 -40 120 -40
+  make_wire -80 -40 -80 -80
+  make_wire -80 -40 -80 10
+}
+
+proc ICON_nor_2 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x} {example_param 1.0}}
+icon_term -type input -origin {-100 -10} -name A
+icon_term -type input -origin {-100 10} -name B
+icon_term -type output -origin {100 -10} -name vout
+icon_term -type inout -origin {100 30} -name vdd
+icon_term -type inout -origin {100 50} -name gnd
+icon_property -origin {-90 -10} -label A
+icon_property -origin {-90 10} -label B
+icon_property -origin {90 -10} -anchor e -label vout
+icon_property -origin {90 30} -anchor e -label vdd
+icon_property -origin {90 50} -anchor e -label gnd
+icon_property -origin {-90 -60} -label {$name}
+icon_property -origin {-90 -40} -label nor_2
+  icon_line -100 -50 100 -50 100 70 -100 70 -100 -50
+icon_property -origin {-90 80} -label {example_param=$example_param}
+  icon_property -origin {-90 140} -type user -name name -default x
+  icon_property -origin {-90 160} -type user -name example_param -default 1.0
+}
+

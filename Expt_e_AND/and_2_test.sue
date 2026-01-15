@@ -1,0 +1,29 @@
+proc SCHEMATIC_and_2_test {} {
+make and_2 -name xi0 -origin {-10 90}
+make output -name Vout -origin {280 80}
+make global -name vdd -origin {280 120}
+make input -name A -origin {-280 80}
+make input -name B -origin {-280 100}
+make pulse -name B_pulse -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {-200 190}
+make pulse -orient RY -name A_pulse -pulse_voltage 1.3V -origin {-200 0}
+make global -name gnd -origin {0 370}
+  make_wire 90 80 280 80
+  make_wire 90 120 280 120
+  make_wire 90 140 240 140
+  make_wire -200 40 -200 80
+  make_wire -200 80 -110 80
+  make_wire -200 80 -280 80
+  make_wire -200 150 -200 100
+  make_wire -200 100 -110 100
+  make_wire -200 100 -280 100
+  make_wire 240 140 240 320
+  make_wire -390 320 -390 -100
+  make_wire -390 -100 -200 -100
+  make_wire -200 -100 -200 -40
+  make_wire -200 230 -200 320
+  make_wire -200 320 -390 320
+  make_wire 0 320 0 370
+  make_wire 0 320 -200 320
+  make_wire 0 320 240 320
+}
+

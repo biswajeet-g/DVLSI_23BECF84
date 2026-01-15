@@ -1,0 +1,72 @@
+proc SCHEMATIC_and_2 {} {
+make input -name A -origin {140 170}
+make input -orient RXY -name B -origin {600 170}
+make output -name Vout -origin {1040 380}
+make inout -name vdd -origin {660 -20}
+make inout -name gnd -origin {690 710}
+make pmos4 -name M0 -origin {320 170}
+make nmos4 -name M1 -origin {380 420}
+make nmos4 -name M2 -origin {380 600}
+make pmos4 -orient RX -name M3 -origin {440 170}
+make pmos4 -name M4 -origin {940 260}
+make nmos4 -name M5 -origin {940 510}
+  make_wire 320 210 320 310
+  make_wire 440 310 440 210
+  make_wire 320 130 320 70
+  make_wire 440 70 440 130
+  make_wire 380 70 380 10
+  make_wire 320 420 200 420
+  make_wire 200 420 200 170
+  make_wire 200 170 140 170
+  make_wire 200 170 260 170
+  make_wire 380 460 380 560
+  make_wire 320 600 210 600
+  make_wire 210 600 210 720
+  make_wire 210 720 540 720
+  make_wire 540 170 500 170
+  make_wire 540 170 600 170
+  make_wire 380 170 320 170
+  make_wire 380 170 440 170
+  make_wire 450 650 380 650
+  make_wire 380 650 380 640
+  make_wire 380 650 380 670
+  make_wire 380 600 450 600
+  make_wire 450 600 450 650
+  make_wire 380 70 380 170
+  make_wire 320 70 380 70
+  make_wire 380 70 440 70
+  make_wire 320 310 380 310
+  make_wire 380 310 440 310
+  make_wire 880 260 770 260
+  make_wire 770 510 880 510
+  make_wire 770 390 690 390
+  make_wire 940 380 1040 380
+  make_wire 940 580 1000 580
+  make_wire 1000 580 1000 510
+  make_wire 1000 510 940 510
+  make_wire 940 580 940 550
+  make_wire 940 300 940 380
+  make_wire 940 380 940 470
+  make_wire 770 260 770 390
+  make_wire 940 160 1010 160
+  make_wire 1010 160 1010 260
+  make_wire 1010 260 940 260
+  make_wire 940 160 940 220
+  make_wire 770 510 770 390
+  make_wire 380 420 450 420
+  make_wire 450 420 450 600
+  make_wire 540 720 540 170
+  make_wire 380 350 380 310
+  make_wire 380 350 380 380
+  make_wire 690 350 690 390
+  make_wire 690 350 380 350
+  make_wire 940 10 940 160
+  make_wire 660 10 660 -20
+  make_wire 660 10 380 10
+  make_wire 660 10 940 10
+  make_wire 940 670 940 580
+  make_wire 690 670 690 710
+  make_wire 690 670 940 670
+  make_wire 690 670 380 670
+}
+

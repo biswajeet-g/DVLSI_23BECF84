@@ -38,7 +38,7 @@
 
 <img width="1366" height="768" alt="Screenshot (788)" src="https://github.com/user-attachments/assets/40ab2979-4ec4-4b83-a5d4-5d639bb4392e" />
 
-# EXPERIMENT 3 : NOR GATES
+# EXPERIMENT 3 : CMOS NOR GATES
 
 ## Schematic Diagram 1
 

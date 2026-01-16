@@ -1,4 +1,4 @@
-# EXPERIMENT 3 : NOR GATES
+# EXPERIMENT 3 : CMOS NOR GATES
 
 ## Schematic Diagram 1
 

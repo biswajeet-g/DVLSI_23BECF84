@@ -1,0 +1,30 @@
+proc SCHEMATIC_or_test {} {
+make or_1 -name xi0 -origin {2260 80}
+make input -name A -origin {2020 70}
+make input -name B -origin {2020 90}
+make global -name Gnd -origin {2270 280}
+make global -name Vdd -origin {2530 140}
+make pulse -name V0 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {2070 180}
+make pulse -orient RY -name V1 -pulse_voltage 1.3V -origin {2070 -10}
+make output -name vout -origin {2460 70}
+  make_wire 2360 70 2460 70
+  make_wire 2360 110 2530 110
+  make_wire 2070 90 2160 90
+  make_wire 2070 90 2020 90
+  make_wire 2070 70 2020 70
+  make_wire 2070 70 2160 70
+  make_wire 1960 -80 1960 250
+  make_wire 2270 250 2270 280
+  make_wire 2070 220 2070 250
+  make_wire 2360 130 2470 130
+  make_wire 2470 250 2270 250
+  make_wire 2070 -80 2070 -50
+  make_wire 1960 250 2070 250
+  make_wire 2070 250 2270 250
+  make_wire 1960 -80 2070 -80
+  make_wire 2470 130 2470 250
+  make_wire 2530 110 2530 140
+  make_wire 2070 30 2070 70
+  make_wire 2070 90 2070 140
+}
+

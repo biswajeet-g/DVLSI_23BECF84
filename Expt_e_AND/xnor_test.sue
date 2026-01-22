@@ -1,0 +1,30 @@
+proc SCHEMATIC_xnor_test {} {
+make xnor_1 -name xi0 -origin {2340 40}
+make input -name A -origin {2100 30}
+make input -name B -origin {2100 50}
+make output -name Vout -origin {2540 30}
+make global -name Gnd -origin {2350 240}
+make global -name Vdd -origin {2610 100}
+make pulse -name V0 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {2150 140}
+make pulse -orient RY -name V1 -pulse_voltage 1.3V -origin {2150 -50}
+  make_wire 2440 30 2540 30
+  make_wire 2440 70 2610 70
+  make_wire 2150 100 2150 50
+  make_wire 2150 50 2240 50
+  make_wire 2150 50 2100 50
+  make_wire 2150 30 2100 30
+  make_wire 2150 30 2240 30
+  make_wire 2040 -120 2040 210
+  make_wire 2350 210 2350 240
+  make_wire 2150 180 2150 210
+  make_wire 2440 90 2550 90
+  make_wire 2550 90 2550 210
+  make_wire 2550 210 2350 210
+  make_wire 2610 70 2610 100
+  make_wire 2150 -120 2150 -90
+  make_wire 2040 210 2150 210
+  make_wire 2150 210 2350 210
+  make_wire 2040 -120 2150 -120
+  make_wire 2150 -10 2150 30
+}
+

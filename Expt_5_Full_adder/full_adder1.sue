@@ -1,0 +1,522 @@
+proc SCHEMATIC_full_adder1 {} {
+make input -name A -origin {-1410 160}
+make input -name B -origin {50 200}
+make inout -name Avdd -origin {570 -1320}
+make inout -name Agnd -origin {-480 1440}
+make input -name cin -origin {3670 240}
+make output -name s2 -origin {3310 180}
+make pmos4 -name M0 -origin {-610 -130}
+make pmos4 -orient RX -name M1 -origin {-350 -130}
+make pmos4 -name M2 -origin {-610 30}
+make pmos4 -orient RX -name M3 -origin {-350 30}
+make nmos4 -name M4 -origin {-610 270}
+make nmos4 -orient RX -name M5 -origin {-350 270}
+make nmos4 -name M6 -origin {-610 410}
+make nmos4 -orient RX -name M7 -origin {-350 410}
+make pmos4 -name M8 -origin {-1160 30}
+make nmos4 -name M9 -origin {-1160 280}
+make pmos4 -name M10 -origin {300 70}
+make nmos4 -name M11 -origin {300 320}
+make pmos4 -name M12 -origin {1090 -60}
+make nmos4 -name M13 -origin {1150 190}
+make nmos4 -name M14 -origin {1150 370}
+make pmos4 -orient RX -name M15 -origin {1210 -60}
+make pmos4 -name M16 -origin {1710 30}
+make nmos4 -name M17 -origin {1710 280}
+make pmos4 -name M18 -origin {3010 -90}
+make pmos4 -orient RX -name M19 -origin {3270 -90}
+make pmos4 -name M20 -origin {3010 70}
+make pmos4 -orient RX -name M21 -origin {3270 70}
+make nmos4 -name M22 -origin {3010 310}
+make nmos4 -orient RX -name M23 -origin {3270 310}
+make nmos4 -name M24 -origin {3010 450}
+make nmos4 -orient RX -name M25 -origin {3270 450}
+make pmos4 -name M26 -origin {2460 70}
+make nmos4 -name M27 -origin {2460 320}
+make pmos4 -name M28 -origin {3920 110}
+make nmos4 -name M29 -origin {3920 360}
+make pmos4 -name M30 -origin {4710 -20}
+make nmos4 -name M31 -origin {4770 230}
+make nmos4 -name M32 -origin {4770 410}
+make pmos4 -orient RX -name M33 -origin {4830 -20}
+make pmos4 -name M34 -origin {5330 70}
+make nmos4 -name M35 -origin {5330 320}
+make pmos4 -name M36 -origin {6150 0}
+make pmos4 -name M37 -origin {6150 110}
+make nmos4 -name M38 -origin {6060 260}
+make nmos4 -orient RX -name M39 -origin {6260 260}
+make nmos4 -name M40 -origin {6460 200}
+make pmos4 -name M41 -origin {6460 60}
+make output -name cout -origin {6590 130}
+  make_wire -610 -170 -610 -190
+  make_wire -610 310 -610 300
+  make_wire -610 310 -610 370
+  make_wire -350 370 -350 310
+  make_wire -610 450 -610 480
+  make_wire -350 480 -350 450
+  make_wire -480 480 -610 480
+  make_wire -480 480 -350 480
+  make_wire -350 -190 -350 -170
+  make_wire -610 -70 -610 -90
+  make_wire -350 -90 -350 -70
+  make_wire -610 -10 -610 -30
+  make_wire -480 -30 -480 -70
+  make_wire -610 70 -610 100
+  make_wire -350 100 -350 70
+  make_wire -610 230 -610 180
+  make_wire -350 180 -350 230
+  make_wire -490 180 -610 180
+  make_wire -490 180 -350 180
+  make_wire -1220 30 -1330 30
+  make_wire -1330 280 -1220 280
+  make_wire -1100 350 -1100 280
+  make_wire -1100 280 -1160 280
+  make_wire -1160 70 -1160 150
+  make_wire -1160 150 -1160 240
+  make_wire -1330 30 -1330 160
+  make_wire -1330 160 -1330 280
+  make_wire -1160 -70 -1090 -70
+  make_wire -1090 -70 -1090 30
+  make_wire -1090 30 -1160 30
+  make_wire 240 70 130 70
+  make_wire 130 320 240 320
+  make_wire 300 390 360 390
+  make_wire 360 390 360 320
+  make_wire 360 320 300 320
+  make_wire 130 70 130 200
+  make_wire 130 200 130 320
+  make_wire 300 -30 370 -30
+  make_wire 370 -30 370 70
+  make_wire 370 70 300 70
+  make_wire -1160 -310 -1160 -70
+  make_wire -1160 -70 -1160 -10
+  make_wire 300 -30 300 30
+  make_wire 300 -310 -490 -310
+  make_wire 300 -310 300 -30
+  make_wire -1100 350 -1160 350
+  make_wire 300 520 -480 520
+  make_wire -1160 320 -1160 350
+  make_wire -1160 350 -1160 520
+  make_wire -1160 520 -480 520
+  make_wire -480 480 -480 520
+  make_wire 300 360 300 390
+  make_wire 300 390 300 520
+  make_wire -1390 160 -1390 -130
+  make_wire -1390 -130 -670 -130
+  make_wire -1390 160 -1410 160
+  make_wire -1360 500 -230 500
+  make_wire -230 500 -230 270
+  make_wire -1360 160 -1390 160
+  make_wire -1360 160 -1330 160
+  make_wire -740 150 -740 30
+  make_wire -740 30 -670 30
+  make_wire -740 150 -1160 150
+  make_wire -740 150 -740 270
+  make_wire -740 270 -670 270
+  make_wire 80 -130 -290 -130
+  make_wire 80 200 130 200
+  make_wire 80 200 50 200
+  make_wire 80 410 -290 410
+  make_wire 300 190 410 190
+  make_wire 410 190 410 690
+  make_wire 410 690 -770 690
+  make_wire -770 690 -770 410
+  make_wire -770 410 -670 410
+  make_wire 300 190 300 280
+  make_wire 300 190 300 110
+  make_wire 410 190 410 -40
+  make_wire 410 -40 -190 -40
+  make_wire -190 30 -290 30
+  make_wire -1360 160 -1360 500
+  make_wire -290 270 -230 270
+  make_wire -610 -190 -490 -190
+  make_wire 80 -130 80 200
+  make_wire 80 200 80 410
+  make_wire -610 -70 -480 -70
+  make_wire -480 -70 -350 -70
+  make_wire -480 -130 -480 -190
+  make_wire -480 -130 -610 -130
+  make_wire -480 -130 -350 -130
+  make_wire -480 -190 -490 -190
+  make_wire -480 -190 -350 -190
+  make_wire -610 100 -490 100
+  make_wire -490 100 -350 100
+  make_wire -190 -40 -190 30
+  make_wire -350 -30 -350 -10
+  make_wire -480 -30 -610 -30
+  make_wire -480 -30 -350 -30
+  make_wire -490 0 -710 0
+  make_wire -710 -310 -1160 -310
+  make_wire -490 30 -350 30
+  make_wire -490 30 -610 30
+  make_wire -450 270 -450 560
+  make_wire -450 560 -480 560
+  make_wire -480 560 -480 520
+  make_wire -450 270 -610 270
+  make_wire -450 270 -350 270
+  make_wire -530 410 -530 580
+  make_wire -530 410 -610 410
+  make_wire -530 410 -350 410
+  make_wire -480 580 -530 580
+  make_wire -710 -310 -710 0
+  make_wire -490 0 -490 30
+  make_wire 1090 -20 1090 80
+  make_wire 1210 80 1210 -20
+  make_wire 1090 -100 1090 -160
+  make_wire 1210 -160 1210 -100
+  make_wire 1150 -160 1150 -220
+  make_wire 1090 190 970 190
+  make_wire 970 190 970 -60
+  make_wire 970 -60 1030 -60
+  make_wire 1150 230 1150 330
+  make_wire 1090 370 980 370
+  make_wire 980 370 980 490
+  make_wire 980 490 1310 490
+  make_wire 1310 -60 1270 -60
+  make_wire 1310 -60 1370 -60
+  make_wire 1150 -60 1090 -60
+  make_wire 1150 -60 1210 -60
+  make_wire 1220 420 1150 420
+  make_wire 1150 420 1150 410
+  make_wire 1150 420 1150 440
+  make_wire 1150 370 1220 370
+  make_wire 1220 370 1220 420
+  make_wire 1150 -160 1150 -60
+  make_wire 1090 -160 1150 -160
+  make_wire 1150 -160 1210 -160
+  make_wire 1090 80 1150 80
+  make_wire 1150 80 1210 80
+  make_wire 1650 30 1540 30
+  make_wire 1540 280 1650 280
+  make_wire 1540 160 1460 160
+  make_wire 1710 350 1770 350
+  make_wire 1770 350 1770 280
+  make_wire 1770 280 1710 280
+  make_wire 1710 350 1710 320
+  make_wire 1540 30 1540 160
+  make_wire 1710 -70 1780 -70
+  make_wire 1780 -70 1780 30
+  make_wire 1780 30 1710 30
+  make_wire 1710 -70 1710 -10
+  make_wire 1540 280 1540 160
+  make_wire 1150 190 1220 190
+  make_wire 1220 190 1220 370
+  make_wire 1310 490 1310 -60
+  make_wire 1150 120 1150 80
+  make_wire 1150 120 1150 150
+  make_wire 1460 120 1460 160
+  make_wire 1460 120 1150 120
+  make_wire 1710 -220 1710 -70
+  make_wire 1710 440 1710 350
+  make_wire 1460 440 1710 440
+  make_wire 1460 440 1150 440
+  make_wire -490 -310 -710 -310
+  make_wire -490 -310 -490 -190
+  make_wire -480 560 -480 580
+  make_wire 1430 -220 1150 -220
+  make_wire 1430 -220 1710 -220
+  make_wire -490 -370 -490 -310
+  make_wire 1430 -370 1430 -220
+  make_wire 1460 610 -480 610
+  make_wire 1460 440 1460 610
+  make_wire 940 -60 940 -590
+  make_wire 940 -590 -1390 -590
+  make_wire -1390 -590 -1390 -130
+  make_wire 940 -60 970 -60
+  make_wire 1370 -60 1370 -720
+  make_wire 1370 -720 80 -720
+  make_wire 80 -720 80 -130
+  make_wire 3010 -130 3010 -150
+  make_wire 3010 350 3010 340
+  make_wire 3010 350 3010 410
+  make_wire 3270 410 3270 350
+  make_wire 3010 490 3010 520
+  make_wire 3270 520 3270 490
+  make_wire 3140 520 3010 520
+  make_wire 3140 520 3270 520
+  make_wire 3270 -150 3270 -130
+  make_wire 3010 -30 3010 -50
+  make_wire 3270 -50 3270 -30
+  make_wire 3010 30 3010 10
+  make_wire 3140 10 3140 -30
+  make_wire 3010 110 3010 140
+  make_wire 3270 140 3270 110
+  make_wire 3010 270 3010 220
+  make_wire 3270 220 3270 270
+  make_wire 3130 220 3010 220
+  make_wire 3130 220 3270 220
+  make_wire 2400 70 2290 70
+  make_wire 2290 320 2400 320
+  make_wire 2520 390 2520 320
+  make_wire 2520 320 2460 320
+  make_wire 2460 110 2460 190
+  make_wire 2460 190 2460 280
+  make_wire 2290 70 2290 200
+  make_wire 2290 200 2290 320
+  make_wire 2460 -30 2530 -30
+  make_wire 2530 -30 2530 70
+  make_wire 2530 70 2460 70
+  make_wire 3860 110 3750 110
+  make_wire 3750 360 3860 360
+  make_wire 3920 430 3980 430
+  make_wire 3980 430 3980 360
+  make_wire 3980 360 3920 360
+  make_wire 3750 110 3750 240
+  make_wire 3750 240 3750 360
+  make_wire 3920 10 3990 10
+  make_wire 3990 10 3990 110
+  make_wire 3990 110 3920 110
+  make_wire 2460 -270 2460 -30
+  make_wire 2460 -30 2460 30
+  make_wire 3920 10 3920 70
+  make_wire 3920 -270 3130 -270
+  make_wire 3920 -270 3920 10
+  make_wire 2520 390 2460 390
+  make_wire 3920 560 3140 560
+  make_wire 2460 360 2460 390
+  make_wire 2460 390 2460 560
+  make_wire 2460 560 3140 560
+  make_wire 3140 520 3140 560
+  make_wire 3920 400 3920 430
+  make_wire 3920 430 3920 560
+  make_wire 2230 -90 2950 -90
+  make_wire 2230 200 2020 200
+  make_wire 2260 540 3390 540
+  make_wire 3390 540 3390 310
+  make_wire 2260 200 2230 200
+  make_wire 2260 200 2290 200
+  make_wire 2880 190 2880 70
+  make_wire 2880 70 2950 70
+  make_wire 2880 190 2460 190
+  make_wire 2880 190 2880 310
+  make_wire 2880 310 2950 310
+  make_wire 3700 -90 3330 -90
+  make_wire 3700 240 3750 240
+  make_wire 3700 240 3670 240
+  make_wire 3700 450 3330 450
+  make_wire 3920 230 4030 230
+  make_wire 4030 230 4030 730
+  make_wire 4030 730 2850 730
+  make_wire 2850 730 2850 450
+  make_wire 2850 450 2950 450
+  make_wire 3920 230 3920 320
+  make_wire 3920 230 3920 150
+  make_wire 4030 230 4030 0
+  make_wire 4030 0 3430 0
+  make_wire 3430 70 3330 70
+  make_wire 3130 180 3310 180
+  make_wire 3130 180 3130 220
+  make_wire 3130 180 3130 140
+  make_wire 2260 200 2260 540
+  make_wire 3330 310 3390 310
+  make_wire 3010 -150 3130 -150
+  make_wire 3010 -30 3140 -30
+  make_wire 3140 -30 3270 -30
+  make_wire 3140 -90 3140 -150
+  make_wire 3140 -90 3010 -90
+  make_wire 3140 -90 3270 -90
+  make_wire 3140 -150 3130 -150
+  make_wire 3140 -150 3270 -150
+  make_wire 3010 140 3130 140
+  make_wire 3130 140 3270 140
+  make_wire 3430 0 3430 70
+  make_wire 3270 10 3270 30
+  make_wire 3140 10 3010 10
+  make_wire 3140 10 3270 10
+  make_wire 3130 40 2910 40
+  make_wire 2910 -270 2460 -270
+  make_wire 3130 70 3270 70
+  make_wire 3130 70 3010 70
+  make_wire 3170 310 3170 600
+  make_wire 3170 600 3140 600
+  make_wire 3140 600 3140 560
+  make_wire 3170 310 3010 310
+  make_wire 3170 310 3270 310
+  make_wire 3090 450 3090 620
+  make_wire 3090 450 3010 450
+  make_wire 3090 450 3270 450
+  make_wire 3140 620 3090 620
+  make_wire 2910 -270 2910 40
+  make_wire 3130 40 3130 70
+  make_wire 4710 20 4710 120
+  make_wire 4830 120 4830 20
+  make_wire 4710 -60 4710 -120
+  make_wire 4830 -120 4830 -60
+  make_wire 4770 -120 4770 -180
+  make_wire 4710 230 4590 230
+  make_wire 4590 230 4590 -20
+  make_wire 4590 -20 4650 -20
+  make_wire 4770 270 4770 370
+  make_wire 4710 410 4600 410
+  make_wire 4600 410 4600 530
+  make_wire 4600 530 4930 530
+  make_wire 4930 -20 4890 -20
+  make_wire 4930 -20 4990 -20
+  make_wire 4770 -20 4710 -20
+  make_wire 4770 -20 4830 -20
+  make_wire 4840 460 4770 460
+  make_wire 4770 460 4770 450
+  make_wire 4770 460 4770 480
+  make_wire 4770 410 4840 410
+  make_wire 4840 410 4840 460
+  make_wire 4770 -120 4770 -20
+  make_wire 4710 -120 4770 -120
+  make_wire 4770 -120 4830 -120
+  make_wire 4710 120 4770 120
+  make_wire 4770 120 4830 120
+  make_wire 5270 70 5160 70
+  make_wire 5160 320 5270 320
+  make_wire 5160 200 5080 200
+  make_wire 5330 390 5390 390
+  make_wire 5390 390 5390 320
+  make_wire 5390 320 5330 320
+  make_wire 5330 390 5330 360
+  make_wire 5330 110 5330 190
+  make_wire 5330 190 5330 280
+  make_wire 5160 70 5160 200
+  make_wire 5330 -30 5400 -30
+  make_wire 5400 -30 5400 70
+  make_wire 5400 70 5330 70
+  make_wire 5330 -30 5330 30
+  make_wire 5160 320 5160 200
+  make_wire 4770 230 4840 230
+  make_wire 4840 230 4840 410
+  make_wire 4930 530 4930 -20
+  make_wire 4770 160 4770 120
+  make_wire 4770 160 4770 190
+  make_wire 5080 160 5080 200
+  make_wire 5080 160 4770 160
+  make_wire 5330 -180 5330 -30
+  make_wire 5330 480 5330 390
+  make_wire 5080 480 5330 480
+  make_wire 5080 480 4770 480
+  make_wire 3130 -270 2910 -270
+  make_wire 3130 -270 3130 -150
+  make_wire 3140 600 3140 620
+  make_wire 5050 -180 4770 -180
+  make_wire 5050 -180 5330 -180
+  make_wire 5050 -330 5050 -180
+  make_wire 5080 650 3140 650
+  make_wire 5080 480 5080 650
+  make_wire 4560 -20 4560 -550
+  make_wire 4560 -550 2230 -550
+  make_wire 2230 -550 2230 -90
+  make_wire 4560 -20 4590 -20
+  make_wire 4990 -20 4990 -680
+  make_wire 4990 -680 3700 -680
+  make_wire 3700 -680 3700 -90
+  make_wire -490 100 -490 140
+  make_wire -490 140 -490 180
+  make_wire 2230 -90 2230 200
+  make_wire 2020 790 -160 790
+  make_wire -160 790 -160 140
+  make_wire -160 140 -490 140
+  make_wire 2020 200 2020 790
+  make_wire 3700 -90 3700 240
+  make_wire 3700 240 3700 450
+  make_wire -490 -370 570 -370
+  make_wire 570 -370 1430 -370
+  make_wire 5050 -330 3130 -330
+  make_wire 3130 -1040 3130 -330
+  make_wire 3130 -330 3130 -270
+  make_wire 570 -1040 570 -370
+  make_wire 570 -1040 570 -1320
+  make_wire -480 580 -480 610
+  make_wire 3130 -1040 3140 -1040
+  make_wire 3140 620 3140 650
+  make_wire 3140 1110 -480 1110
+  make_wire 3140 1110 3140 650
+  make_wire -480 1110 -480 610
+  make_wire -480 1110 -480 1440
+  make_wire 6150 70 6150 40
+  make_wire 6150 190 6060 190
+  make_wire 6060 190 6060 220
+  make_wire 6150 190 6260 190
+  make_wire 6260 190 6260 220
+  make_wire 6060 300 6060 320
+  make_wire 6260 320 6260 300
+  make_wire 6150 320 6260 320
+  make_wire 6150 320 6060 320
+  make_wire 6400 60 6370 60
+  make_wire 6370 200 6400 200
+  make_wire 6150 160 6370 160
+  make_wire 6150 160 6150 190
+  make_wire 6150 160 6150 150
+  make_wire 6370 160 6370 60
+  make_wire 6370 160 6370 200
+  make_wire 6460 20 6460 -70
+  make_wire 6150 0 6190 0
+  make_wire 6190 0 6190 -70
+  make_wire 6190 -70 6460 -70
+  make_wire 6460 60 6500 60
+  make_wire 6500 60 6500 -70
+  make_wire 6500 -70 6460 -70
+  make_wire 6460 240 6460 340
+  make_wire 6460 340 6150 340
+  make_wire 6150 260 6150 320
+  make_wire 6150 260 6060 260
+  make_wire 6150 260 6260 260
+  make_wire 6460 200 6490 200
+  make_wire 6490 200 6490 340
+  make_wire 6490 340 6460 340
+  make_wire 6150 110 6190 110
+  make_wire 6190 110 6190 0
+  make_wire 6460 130 6590 130
+  make_wire 6460 130 6460 100
+  make_wire 6460 130 6460 160
+  make_wire 6000 260 5960 260
+  make_wire 5960 260 5960 0
+  make_wire 5960 0 6090 0
+  make_wire 5960 0 5880 0
+  make_wire 6320 260 6350 260
+  make_wire 6350 260 6350 420
+  make_wire 6350 420 5920 420
+  make_wire 5920 110 6090 110
+  make_wire 5920 110 5450 110
+  make_wire 1710 70 1710 130
+  make_wire 1710 240 1710 130
+  make_wire 1890 130 1710 130
+  make_wire 1890 -820 1890 130
+  make_wire 5880 -820 5880 0
+  make_wire 5880 -820 1890 -820
+  make_wire 5920 110 5920 420
+  make_wire 5450 110 5450 190
+  make_wire 5450 190 5330 190
+  make_wire 5450 190 5460 190
+  make_wire 6150 320 6150 340
+  make_wire 6150 -70 6150 -40
+  make_wire 6160 -1100 3100 -1100
+  make_wire 3100 -1040 3130 -1040
+  make_wire 570 -1040 3100 -1040
+  make_wire 6150 1110 3140 1110
+  make_wire 6150 1110 6150 340
+  make_wire 3100 -1100 3100 -1040
+  make_wire 6160 -1100 6160 -70
+  make_wire 6160 -70 6190 -70
+  make_wire 6160 -70 6150 -70
+}
+
+proc ICON_full_adder1 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x} {example_param 1.0}}
+icon_term -type input -origin {-100 -50} -name A
+icon_term -type input -origin {-100 -30} -name B
+icon_term -type input -origin {-100 -10} -name cin
+icon_term -type output -origin {100 -30} -name s2
+icon_term -type output -origin {100 30} -name cout
+icon_term -type inout -origin {100 70} -name Avdd
+icon_term -type inout -origin {100 90} -name Agnd
+icon_property -origin {-90 -50} -label A
+icon_property -origin {-90 -30} -label B
+icon_property -origin {-90 -10} -label cin
+icon_property -origin {90 -30} -anchor e -label s2
+icon_property -origin {90 30} -anchor e -label cout
+icon_property -origin {90 70} -anchor e -label Avdd
+icon_property -origin {90 90} -anchor e -label Agnd
+icon_property -origin {-90 -100} -label {$name}
+icon_property -origin {-90 -80} -label full_adder1
+  icon_line -100 -90 100 -90 100 110 -100 110 -100 -90
+icon_property -origin {-90 120} -label {example_param=$example_param}
+  icon_property -origin {-90 180} -type user -name name -default x
+  icon_property -origin {-90 200} -type user -name example_param -default 1.0
+}
+

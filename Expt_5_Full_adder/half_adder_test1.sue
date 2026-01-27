@@ -1,0 +1,32 @@
+proc SCHEMATIC_half_adder_test1 {} {
+make half_adder1 -name xi0 -origin {610 90}
+make input -name A -origin {370 70}
+make input -name B -origin {370 90}
+make global -name Gnd -origin {620 280}
+make global -name Vdd -origin {880 140}
+make pulse -name V0 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {420 180}
+make pulse -orient RY -name V1 -pulse_voltage 1.3V -origin {420 -10}
+make output -name sum -origin {810 70}
+make output -name carry -origin {810 90}
+  make_wire 710 70 810 70
+  make_wire 420 140 420 90
+  make_wire 420 90 510 90
+  make_wire 420 90 370 90
+  make_wire 420 70 370 70
+  make_wire 420 70 510 70
+  make_wire 310 -80 310 250
+  make_wire 620 250 620 280
+  make_wire 420 220 420 250
+  make_wire 750 150 750 250
+  make_wire 420 -80 420 -50
+  make_wire 310 250 420 250
+  make_wire 310 -80 420 -80
+  make_wire 420 30 420 70
+  make_wire 420 250 620 250
+  make_wire 620 250 750 250
+  make_wire 750 150 710 150
+  make_wire 880 130 880 140
+  make_wire 880 130 710 130
+  make_wire 710 90 810 90
+}
+

@@ -1,0 +1,63 @@
+proc SCHEMATIC_full_adder2 {} {
+make half_adder1 -name xi0 -origin {1170 70}
+make input -name A -origin {960 50}
+make input -name B -origin {960 70}
+make input -name cin -origin {1340 -190}
+make output -name s2 -origin {1590 50}
+make output -name cout -origin {1890 60}
+make global -name gnd -origin {1460 290}
+make global -name vdd -origin {1670 290}
+make half_adder1 -name xi1 -origin {1470 70}
+make or_1 -name xi2 -origin {1760 70}
+make pulse -name V0 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {1000 140}
+make pulse -orient RY -name V1 -pulse_voltage 1.3V -origin {1000 -40}
+make pulse -name V2 -pulse_voltage 1.3V -origin {1230 -100}
+  make_wire 1270 70 1310 70
+  make_wire 1310 70 1310 -40
+  make_wire 1630 -40 1630 60
+  make_wire 1630 60 1660 60
+  make_wire 1570 50 1590 50
+  make_wire 1640 70 1640 80
+  make_wire 1640 80 1660 80
+  make_wire 1270 110 1290 110
+  make_wire 1290 110 1290 200
+  make_wire 1890 200 1890 100
+  make_wire 1890 100 1860 100
+  make_wire 1570 110 1600 110
+  make_wire 1600 110 1600 200
+  make_wire 1600 200 1290 200
+  make_wire 1270 130 1270 260
+  make_wire 1860 260 1860 120
+  make_wire 1570 130 1570 260
+  make_wire 1570 260 1860 260
+  make_wire 1860 60 1890 60
+  make_wire 1460 290 1460 260
+  make_wire 1460 260 1570 260
+  make_wire 1460 260 1270 260
+  make_wire 1670 290 1670 200
+  make_wire 1670 200 1600 200
+  make_wire 1670 200 1890 200
+  make_wire 1630 -40 1310 -40
+  make_wire 1640 70 1570 70
+  make_wire 1370 50 1270 50
+  make_wire 1000 0 1000 50
+  make_wire 1000 50 1070 50
+  make_wire 1000 50 960 50
+  make_wire 1000 100 1000 70
+  make_wire 1000 70 1070 70
+  make_wire 1000 70 960 70
+  make_wire 1000 -80 1000 -100
+  make_wire 1000 -100 900 -100
+  make_wire 900 -100 900 260
+  make_wire 1000 260 1000 180
+  make_wire 1000 260 900 260
+  make_wire 1000 260 1270 260
+  make_wire 1340 70 1370 70
+  make_wire 1230 -140 1340 -140
+  make_wire 1340 -140 1340 -190
+  make_wire 1340 -140 1340 70
+  make_wire 1230 -60 1090 -60
+  make_wire 1090 -60 1090 -100
+  make_wire 1090 -100 1000 -100
+}
+

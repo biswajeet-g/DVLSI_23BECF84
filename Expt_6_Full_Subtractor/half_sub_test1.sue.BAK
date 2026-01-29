@@ -1,0 +1,4 @@
+proc SCHEMATIC_half_sub_test1 {} {
+make half_subtractor1 -name xi0 -origin {0 90}
+}
+

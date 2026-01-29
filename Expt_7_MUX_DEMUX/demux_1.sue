@@ -1,0 +1,195 @@
+proc SCHEMATIC_demux_1 {} {
+make pmos4 -name M0 -origin {300 110}
+make nmos4 -name M1 -origin {360 360}
+make nmos4 -name M2 -origin {360 540}
+make pmos4 -orient RX -name M3 -origin {420 110}
+make pmos4 -name M4 -origin {920 200}
+make nmos4 -name M5 -origin {920 450}
+make inout -name vdd -origin {1310 -180}
+make pmos4 -name M6 -origin {310 990}
+make nmos4 -name M7 -origin {370 1240}
+make nmos4 -name M8 -origin {370 1420}
+make pmos4 -orient RX -name M9 -origin {430 990}
+make pmos4 -name M10 -origin {930 1080}
+make nmos4 -name M11 -origin {930 1330}
+make inout -name Gnd -origin {-760 1690}
+make pmos4 -name M12 -origin {-180 450}
+make nmos4 -name M13 -origin {-180 700}
+make input -name S -origin {-430 580}
+make input -name D -origin {-560 -30}
+make output -name Y0 -origin {1030 1200}
+make output -name Y1 -origin {1020 320}
+  make_wire 300 150 300 250
+  make_wire 420 250 420 150
+  make_wire 300 70 300 10
+  make_wire 420 10 420 70
+  make_wire 360 10 360 -50
+  make_wire 300 360 180 360
+  make_wire 180 110 -420 110
+  make_wire 180 110 240 110
+  make_wire 360 400 360 500
+  make_wire 300 540 190 540
+  make_wire 190 540 190 660
+  make_wire 190 660 520 660
+  make_wire 520 110 480 110
+  make_wire 520 110 600 110
+  make_wire 360 110 300 110
+  make_wire 360 110 420 110
+  make_wire 430 590 360 590
+  make_wire 360 590 360 580
+  make_wire 360 590 360 610
+  make_wire 360 540 430 540
+  make_wire 430 540 430 590
+  make_wire 360 10 360 110
+  make_wire 300 10 360 10
+  make_wire 360 10 420 10
+  make_wire 300 250 360 250
+  make_wire 360 250 420 250
+  make_wire 860 200 750 200
+  make_wire 750 450 860 450
+  make_wire 750 330 670 330
+  make_wire 920 320 1020 320
+  make_wire 920 520 980 520
+  make_wire 980 520 980 450
+  make_wire 980 450 920 450
+  make_wire 920 520 920 490
+  make_wire 920 240 920 320
+  make_wire 920 320 920 410
+  make_wire 750 200 750 330
+  make_wire 920 100 990 100
+  make_wire 990 100 990 200
+  make_wire 990 200 920 200
+  make_wire 920 100 920 160
+  make_wire 750 450 750 330
+  make_wire 360 360 430 360
+  make_wire 430 360 430 540
+  make_wire 360 290 360 250
+  make_wire 360 290 360 320
+  make_wire 670 290 670 330
+  make_wire 670 290 360 290
+  make_wire 920 -50 920 100
+  make_wire 640 -50 360 -50
+  make_wire 640 -50 920 -50
+  make_wire 920 610 920 520
+  make_wire 310 1030 310 1130
+  make_wire 430 1130 430 1030
+  make_wire 310 950 310 890
+  make_wire 430 890 430 950
+  make_wire 370 890 370 830
+  make_wire 310 1240 190 1240
+  make_wire 190 1240 190 990
+  make_wire 190 990 250 990
+  make_wire 370 1280 370 1380
+  make_wire 310 1420 200 1420
+  make_wire 200 1420 200 1540
+  make_wire 200 1540 530 1540
+  make_wire 530 990 490 990
+  make_wire 530 990 620 990
+  make_wire 370 990 310 990
+  make_wire 370 990 430 990
+  make_wire 440 1470 370 1470
+  make_wire 370 1470 370 1460
+  make_wire 370 1470 370 1490
+  make_wire 370 1420 440 1420
+  make_wire 440 1420 440 1470
+  make_wire 370 890 370 990
+  make_wire 310 890 370 890
+  make_wire 370 890 430 890
+  make_wire 310 1130 370 1130
+  make_wire 370 1130 430 1130
+  make_wire 870 1080 760 1080
+  make_wire 760 1330 870 1330
+  make_wire 760 1210 680 1210
+  make_wire 930 1200 1030 1200
+  make_wire 930 1400 990 1400
+  make_wire 990 1400 990 1330
+  make_wire 990 1330 930 1330
+  make_wire 930 1400 930 1370
+  make_wire 930 1120 930 1200
+  make_wire 930 1200 930 1290
+  make_wire 760 1080 760 1210
+  make_wire 930 980 1000 980
+  make_wire 1000 980 1000 1080
+  make_wire 1000 1080 930 1080
+  make_wire 930 980 930 1040
+  make_wire 760 1330 760 1210
+  make_wire 370 1240 440 1240
+  make_wire 440 1240 440 1420
+  make_wire 370 1170 370 1130
+  make_wire 370 1170 370 1200
+  make_wire 680 1170 680 1210
+  make_wire 680 1170 370 1170
+  make_wire 930 830 930 980
+  make_wire 930 1490 930 1400
+  make_wire -240 450 -350 450
+  make_wire -350 700 -240 700
+  make_wire -120 700 -180 700
+  make_wire -180 770 -180 740
+  make_wire -350 450 -350 580
+  make_wire -350 580 -350 700
+  make_wire -180 350 -110 350
+  make_wire -110 350 -110 450
+  make_wire -110 450 -180 450
+  make_wire 180 110 180 360
+  make_wire -420 110 -420 580
+  make_wire -420 580 -350 580
+  make_wire -420 580 -430 580
+  make_wire 520 110 520 660
+  make_wire 600 110 600 -30
+  make_wire 530 990 530 1540
+  make_wire 620 990 620 860
+  make_wire -520 860 -520 -30
+  make_wire -520 860 620 860
+  make_wire -520 -30 600 -30
+  make_wire -520 -30 -560 -30
+  make_wire -760 770 -180 770
+  make_wire -180 770 -120 770
+  make_wire 360 610 650 610
+  make_wire 920 610 650 610
+  make_wire 650 770 -120 770
+  make_wire -120 700 -120 770
+  make_wire 650 610 650 770
+  make_wire 370 1490 670 1490
+  make_wire 930 1490 670 1490
+  make_wire 670 1490 670 1650
+  make_wire -760 1650 -760 1690
+  make_wire -760 1650 -760 770
+  make_wire 670 1650 -760 1650
+  make_wire 930 830 370 830
+  make_wire 930 830 1310 830
+  make_wire 640 -130 1310 -130
+  make_wire 1310 -130 1310 -180
+  make_wire 1310 -130 1310 830
+  make_wire -180 -130 640 -130
+  make_wire 640 -50 640 -130
+  make_wire -180 -130 -180 350
+  make_wire -180 350 -180 410
+  make_wire -180 580 -180 490
+  make_wire -180 580 -180 660
+  make_wire 40 580 40 990
+  make_wire -180 580 40 580
+  make_wire 190 990 40 990
+}
+
+proc ICON_demux_1 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x} {example_param 1.0}}
+icon_term -type input -origin {-100 -20} -name S
+icon_term -type input -origin {-100 0} -name D
+icon_term -type output -origin {100 -20} -name Y0
+icon_term -type output -origin {100 0} -name Y1
+icon_term -type inout -origin {100 40} -name vdd
+icon_term -type inout -origin {100 60} -name Gnd
+icon_property -origin {-90 -20} -label S
+icon_property -origin {-90 0} -label D
+icon_property -origin {90 -20} -anchor e -label Y0
+icon_property -origin {90 0} -anchor e -label Y1
+icon_property -origin {90 40} -anchor e -label vdd
+icon_property -origin {90 60} -anchor e -label Gnd
+icon_property -origin {-90 -70} -label {$name}
+icon_property -origin {-90 -50} -label demux_1
+  icon_line -100 -60 100 -60 100 80 -100 80 -100 -60
+icon_property -origin {-90 90} -label {example_param=$example_param}
+  icon_property -origin {-90 150} -type user -name name -default x
+  icon_property -origin {-90 170} -type user -name example_param -default 1.0
+}
+

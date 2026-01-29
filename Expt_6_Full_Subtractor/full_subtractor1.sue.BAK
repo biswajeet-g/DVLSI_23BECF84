@@ -1,0 +1,47 @@
+proc SCHEMATIC_full_subtractor1 {} {
+make half_subtractor1 -name xi0 -origin {-240 140}
+make half_subtractor1 -name xi1 -origin {170 140}
+make or_1 -name xi2 -origin {560 130}
+make input -name A -origin {-450 120}
+make input -name B -origin {-450 140}
+make output -name D -origin {330 120}
+make input -name Bin -origin {-30 -150}
+make output -name Bout -origin {710 120}
+make inout -name Avdd -origin {480 310}
+make inout -name Agnd -origin {460 430}
+  make_wire -340 120 -450 120
+  make_wire -340 140 -450 140
+  make_wire -140 120 70 120
+  make_wire -140 140 -60 140
+  make_wire -60 140 -60 10
+  make_wire -60 10 410 10
+  make_wire 410 120 460 120
+  make_wire 270 120 330 120
+  make_wire 460 140 270 140
+  make_wire 410 10 410 120
+  make_wire 70 140 0 140
+  make_wire 0 140 0 -150
+  make_wire 0 -150 -30 -150
+  make_wire 660 120 710 120
+  make_wire -140 180 -80 180
+  make_wire -80 180 -80 280
+  make_wire 690 280 690 160
+  make_wire 690 160 660 160
+  make_wire 270 180 350 180
+  make_wire 350 180 350 280
+  make_wire 350 280 -80 280
+  make_wire -140 200 -120 200
+  make_wire -120 200 -120 400
+  make_wire 730 400 730 180
+  make_wire 270 200 300 200
+  make_wire 300 400 -120 400
+  make_wire 480 280 480 310
+  make_wire 480 280 350 280
+  make_wire 480 280 690 280
+  make_wire 660 180 730 180
+  make_wire 300 200 300 400
+  make_wire 460 400 460 430
+  make_wire 460 400 300 400
+  make_wire 460 400 730 400
+}
+

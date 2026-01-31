@@ -155,4 +155,45 @@
 
 <img width="1366" height="768" alt="Screenshot (836)" src="https://github.com/user-attachments/assets/f025a8fe-7af4-49f1-b4ad-abe1514cf6e4" />
 
+# Experiment 6 : CMOS Full Subtractor
 
+### Schematic of Half Subtractor 
+
+<img width="1366" height="768" alt="Screenshot (843)" src="https://github.com/user-attachments/assets/ceefde04-9315-4f3e-ba43-78400b35f8f9" />
+
+### Schematic of Full Subtractor 
+
+<img width="1366" height="768" alt="Screenshot (844)" src="https://github.com/user-attachments/assets/172eaeed-e44e-4552-ac7f-4a0f56d711bb" />
+
+### Simulation Results
+
+<img width="1366" height="768" alt="Screenshot (841)" src="https://github.com/user-attachments/assets/a30da635-a19d-46a4-b4bd-7b552fd0b825" />
+
+# Experiment 7 
+## CMOS 2:1 MUX
+
+### Schematic Diagram 1
+
+<img width="1366" height="768" alt="Screenshot (846)" src="https://github.com/user-attachments/assets/4fd74f23-070b-4176-818e-333130591b78" />
+
+### Schematic Diagram 2
+
+<img width="1366" height="768" alt="Screenshot (845)" src="https://github.com/user-attachments/assets/3af4de58-65ab-422a-a9df-646ae2992ebf" />
+
+### Simulation Results
+
+<img width="1366" height="768" alt="Screenshot (848)" src="https://github.com/user-attachments/assets/15dc83fc-29f2-48a2-8bb5-22d0258cfcc3" />
+
+## CMOS 1:2 DEMUX
+
+### Schematic Diagram 1
+
+<img width="1366" height="768" alt="Screenshot (851)" src="https://github.com/user-attachments/assets/bd234491-f7a2-4a70-b991-6901f2549b56" />
+
+### Schematic Diagram 2
+
+<img width="1366" height="768" alt="Screenshot (850)" src="https://github.com/user-attachments/assets/2c151a67-bea5-4c4b-a2c2-2c3e849a722e" />
+
+### Simulation Results
+
+<img width="1366" height="768" alt="Screenshot (852)" src="https://github.com/user-attachments/assets/0c9e4473-6acc-443d-8178-3d38f83855ae" />

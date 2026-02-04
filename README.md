@@ -205,7 +205,7 @@
 
 <img width="1366" height="768" alt="Screenshot (900)" src="https://github.com/user-attachments/assets/ecd41ce6-8ad6-4291-b960-63cefc5030a0" />
 
-### Schematic Diargram 2
+### Schematic Diagram 2
 
 <img width="1366" height="768" alt="Screenshot (901)" src="https://github.com/user-attachments/assets/4a036346-5275-4ea3-a891-d406d4960a20" />
 

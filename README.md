@@ -228,9 +228,7 @@
 <img width="1366" height="768" alt="Screenshot (904)" src="https://github.com/user-attachments/assets/2536b48d-25d2-4549-ac38-6a75325560f3" />
 
 
-# EXPERIMENT 8:
-
-## D FLIP-FLOP
+# EXPERIMENT 8: CMOS D FLIP-FLOP
 
 ### Schematic Diagram 1
 

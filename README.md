@@ -5,7 +5,7 @@
 - ### SEMESTER : 6
 - ### ROLL NO: 19
 - ### SIC : 23BECF84
-- ### Faculty - Mr. Dhananjaya Tripathy 
+- ### Faculty : Mr. Dhananjaya Tripathy 
 
 # Experiment 1 : CMOS Inverter
 

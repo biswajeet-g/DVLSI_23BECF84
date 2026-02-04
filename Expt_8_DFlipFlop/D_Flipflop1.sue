@@ -1,0 +1,151 @@
+proc SCHEMATIC_D_Flipflop1 {} {
+make nmos4 -name M0 -origin {-1100 210}
+make nmos4 -name M1 -origin {-870 60}
+make nmos4 -name M2 -origin {-870 210}
+make pmos4 -name M3 -origin {-1100 -120}
+make pmos4 -name M4 -origin {-1100 60}
+make pmos4 -name M5 -origin {-870 -110}
+make pmos4 -name M6 -origin {-660 -110}
+make nmos4 -name M7 -origin {-660 70}
+make nmos4 -name M8 -origin {-660 210}
+make pmos4 -name M9 -origin {-430 -120}
+make inout -name gnd -origin {-520 360}
+make inout -name vdd -origin {-1100 -410}
+make input -name clk -origin {-1480 60}
+make input -name D -origin {-1480 -210}
+make output -name Q' -origin {-310 140}
+make output -name Q -origin {70 50}
+make pmos4 -name M10 -origin {-30 -70}
+make nmos4 -name M11 -origin {-30 180}
+make input -name R -origin {-520 -120}
+  make_wire -1100 -80 -1100 20
+  make_wire -1160 -120 -1240 -120
+  make_wire -1240 210 -1160 210
+  make_wire -1240 -210 -1480 -210
+  make_wire -1100 130 -980 130
+  make_wire -980 130 -980 60
+  make_wire -980 60 -930 60
+  make_wire -1010 -110 -1010 -270
+  make_wire -1010 -270 -1370 -270
+  make_wire -1370 60 -1160 60
+  make_wire -1370 60 -1480 60
+  make_wire -930 210 -960 210
+  make_wire -960 210 -960 -110
+  make_wire -960 -110 -930 -110
+  make_wire -960 -110 -1010 -110
+  make_wire -1100 -120 -1080 -120
+  make_wire -1080 -120 -1080 -220
+  make_wire -1080 -220 -1100 -220
+  make_wire -1100 -220 -1100 -160
+  make_wire -1080 -120 -1080 60
+  make_wire -1080 60 -1100 60
+  make_wire -870 -110 -850 -110
+  make_wire -850 -110 -850 -300
+  make_wire -870 -150 -870 -300
+  make_wire -870 -300 -850 -300
+  make_wire -870 -300 -1100 -300
+  make_wire -870 100 -870 170
+  make_wire -720 -110 -760 -110
+  make_wire -760 210 -720 210
+  make_wire -870 -30 -760 -30
+  make_wire -870 -30 -870 -70
+  make_wire -870 -30 -870 20
+  make_wire -760 -30 -760 -110
+  make_wire -760 -30 -760 210
+  make_wire -720 70 -800 70
+  make_wire -800 70 -800 270
+  make_wire -800 270 -1370 270
+  make_wire -660 110 -660 170
+  make_wire -660 -150 -660 -300
+  make_wire -660 -300 -850 -300
+  make_wire -660 -110 -640 -110
+  make_wire -640 -110 -640 -300
+  make_wire -640 -300 -660 -300
+  make_wire -1100 100 -1100 130
+  make_wire -1100 130 -1100 170
+  make_wire -1100 250 -1100 320
+  make_wire -660 320 -660 250
+  make_wire -870 250 -870 320
+  make_wire -1100 210 -1050 210
+  make_wire -1050 210 -1050 320
+  make_wire -1050 320 -870 320
+  make_wire -1050 320 -1100 320
+  make_wire -870 210 -840 210
+  make_wire -840 210 -840 320
+  make_wire -840 320 -870 320
+  make_wire -840 320 -660 320
+  make_wire -870 60 -840 60
+  make_wire -840 60 -840 210
+  make_wire -660 70 -620 70
+  make_wire -620 320 -660 320
+  make_wire -660 210 -620 210
+  make_wire -620 210 -620 70
+  make_wire -1370 -270 -1370 60
+  make_wire -1370 60 -1370 270
+  make_wire -1240 -210 -1240 -120
+  make_wire -1240 -120 -1240 210
+  make_wire -1100 -410 -1100 -300
+  make_wire -1100 -300 -1100 -220
+  make_wire -430 -300 -640 -300
+  make_wire -430 -120 -400 -120
+  make_wire -400 -300 -430 -300
+  make_wire -90 -70 -200 -70
+  make_wire -200 180 -90 180
+  make_wire -30 50 70 50
+  make_wire -30 250 30 250
+  make_wire 30 250 30 180
+  make_wire 30 180 -30 180
+  make_wire -30 -30 -30 50
+  make_wire -30 50 -30 140
+  make_wire -30 -170 40 -170
+  make_wire 40 -170 40 -70
+  make_wire 40 -70 -30 -70
+  make_wire -200 -70 -200 60
+  make_wire -200 60 -200 180
+  make_wire -430 140 -310 140
+  make_wire -430 60 -200 60
+  make_wire -30 -300 -30 -170
+  make_wire -30 -170 -30 -110
+  make_wire -30 -300 -400 -300
+  make_wire -620 320 -620 210
+  make_wire -30 220 -30 250
+  make_wire -30 250 -30 320
+  make_wire -520 320 -520 360
+  make_wire -520 320 -30 320
+  make_wire -520 320 -620 320
+  make_wire -660 -20 -520 -20
+  make_wire -520 -20 -520 60
+  make_wire -520 60 -430 60
+  make_wire -660 -20 -660 30
+  make_wire -660 -20 -660 -70
+  make_wire -430 -80 -430 60
+  make_wire -430 60 -430 140
+  make_wire -400 -300 -400 -120
+  make_wire -430 -300 -430 -160
+  make_wire -490 -120 -520 -120
+}
+
+proc ICON_D_Flipflop1 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x} {example_param 1.0}}
+icon_term -type input -origin {-100 -20} -name clk
+icon_term -type input -origin {-100 0} -name D
+icon_term -type input -origin {-100 20} -name R
+icon_term -type output -origin {100 -20} -name Q'
+icon_term -type output -origin {100 0} -name Q
+icon_term -type inout -origin {100 40} -name gnd
+icon_term -type inout -origin {100 60} -name vdd
+icon_property -origin {-90 -20} -label clk
+icon_property -origin {-90 0} -label D
+icon_property -origin {-90 20} -label R
+icon_property -origin {90 -20} -anchor e -label Q'
+icon_property -origin {90 0} -anchor e -label Q
+icon_property -origin {90 40} -anchor e -label gnd
+icon_property -origin {90 60} -anchor e -label vdd
+icon_property -origin {-90 -70} -label {$name}
+icon_property -origin {-90 -50} -label D_Flipflop1
+  icon_line -100 -60 100 -60 100 80 -100 80 -100 -60
+icon_property -origin {-90 90} -label {example_param=$example_param}
+  icon_property -origin {-90 150} -type user -name name -default x
+  icon_property -origin {-90 170} -type user -name example_param -default 1.0
+}
+

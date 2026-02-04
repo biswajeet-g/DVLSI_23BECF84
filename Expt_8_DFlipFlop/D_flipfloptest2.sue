@@ -1,0 +1,39 @@
+proc SCHEMATIC_D_flipfloptest2 {} {
+make global -name vdd -origin {1500 250}
+make global -name gnd -origin {1260 310}
+make input -name clk -origin {1010 100}
+make input -name D -origin {1010 120}
+make input -name R -origin {890 140}
+make output -name QQ -origin {1460 120}
+make output -name Q -origin {1460 100}
+make pulse -name V0 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {1060 210}
+make pulse -orient RY -name V1 -pulse_voltage 1.3V -origin {1100 20}
+make pulse -name V2 -pulse_voltage 1.3V -origin {910 210}
+make D_flipflop2 -name xi0 -origin {1250 120}
+  make_wire 950 -50 950 280
+  make_wire 1430 160 1430 280
+  make_wire 1060 280 950 280
+  make_wire 910 170 910 140
+  make_wire 910 140 1150 140
+  make_wire 910 140 890 140
+  make_wire 910 280 950 280
+  make_wire 1350 100 1460 100
+  make_wire 1100 -50 1100 -20
+  make_wire 1060 250 1060 280
+  make_wire 1260 280 1260 310
+  make_wire 910 250 910 280
+  make_wire 1060 280 1260 280
+  make_wire 1260 280 1430 280
+  make_wire 950 -50 1100 -50
+  make_wire 1100 60 1100 100
+  make_wire 1100 100 1010 100
+  make_wire 1100 100 1150 100
+  make_wire 1060 170 1060 120
+  make_wire 1060 120 1150 120
+  make_wire 1060 120 1010 120
+  make_wire 1500 180 1500 250
+  make_wire 1350 120 1460 120
+  make_wire 1350 160 1430 160
+  make_wire 1350 180 1500 180
+}
+

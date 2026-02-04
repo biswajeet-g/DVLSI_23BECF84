@@ -1,0 +1,78 @@
+proc SCHEMATIC_demux_1_4 {} {
+make demux_1 -name xi2 -origin {-640 -170}
+make demux_1 -name xi0 -origin {-1020 -170}
+make demux_1 -name xi1 -origin {-630 40}
+make input -name S0 -origin {-820 -310}
+make input -name S1 -origin {-1340 -190}
+make input -name D -origin {-1340 -170}
+make output -name Y0 -origin {-440 -190}
+make output -name Y1 -origin {-440 -170}
+make output -name Y2 -origin {-440 20}
+make output -name Y3 -origin {-440 40}
+make inout -name vdd -origin {-650 170}
+make inout -name gnd -origin {-660 250}
+  make_wire -1340 -190 -1120 -190
+  make_wire -1120 -170 -1340 -170
+  make_wire -920 -190 -810 -190
+  make_wire -810 -170 -740 -170
+  make_wire -920 -170 -830 -170
+  make_wire -830 40 -730 40
+  make_wire -740 -190 -770 -190
+  make_wire -730 20 -770 20
+  make_wire -770 -310 -820 -310
+  make_wire -920 -130 -880 -130
+  make_wire -880 -130 -880 150
+  make_wire -490 -130 -540 -130
+  make_wire -530 80 -490 80
+  make_wire -920 -110 -910 -110
+  make_wire -510 220 -510 100
+  make_wire -540 -110 -510 -110
+  make_wire -540 -190 -440 -190
+  make_wire -810 -190 -810 -170
+  make_wire -540 -170 -440 -170
+  make_wire -490 -130 -490 80
+  make_wire -490 80 -490 150
+  make_wire -530 40 -440 40
+  make_wire -770 -310 -770 -190
+  make_wire -770 -190 -770 20
+  make_wire -530 20 -440 20
+  make_wire -830 -170 -830 40
+  make_wire -910 -110 -910 220
+  make_wire -510 100 -510 -110
+  make_wire -510 100 -530 100
+  make_wire -650 150 -650 170
+  make_wire -650 150 -880 150
+  make_wire -650 150 -490 150
+  make_wire -660 220 -660 250
+  make_wire -660 220 -910 220
+  make_wire -660 220 -510 220
+}
+
+proc ICON_demux_1_4 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x} {example_param 1.0}}
+icon_term -type input -origin {-100 -40} -name S0
+icon_term -type input -origin {-100 -20} -name S1
+icon_term -type input -origin {-100 0} -name D
+icon_term -type output -origin {100 -40} -name Y0
+icon_term -type output -origin {100 -20} -name Y1
+icon_term -type output -origin {100 0} -name Y2
+icon_term -type output -origin {100 20} -name Y3
+icon_term -type inout -origin {100 60} -name vdd
+icon_term -type inout -origin {100 80} -name gnd
+icon_property -origin {-90 -40} -label S0
+icon_property -origin {-90 -20} -label S1
+icon_property -origin {-90 0} -label D
+icon_property -origin {90 -40} -anchor e -label Y0
+icon_property -origin {90 -20} -anchor e -label Y1
+icon_property -origin {90 0} -anchor e -label Y2
+icon_property -origin {90 20} -anchor e -label Y3
+icon_property -origin {90 60} -anchor e -label vdd
+icon_property -origin {90 80} -anchor e -label gnd
+icon_property -origin {-90 -90} -label {$name}
+icon_property -origin {-90 -70} -label demux_1_4
+  icon_line -100 -80 100 -80 100 100 -100 100 -100 -80
+icon_property -origin {-90 110} -label {example_param=$example_param}
+  icon_property -origin {-90 170} -type user -name name -default x
+  icon_property -origin {-90 190} -type user -name example_param -default 1.0
+}
+

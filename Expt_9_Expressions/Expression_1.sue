@@ -1,0 +1,142 @@
+proc SCHEMATIC_Expression_1 {} {
+make pmos4 -name M0 -origin {1020 30}
+make pmos4 -orient RX -name M1 -origin {1300 20}
+make pmos4 -name M2 -origin {920 240}
+make pmos4 -orient RX -name M3 -origin {1420 240}
+make pmos4 -orient RX -name M4 -origin {1420 370}
+make nmos4 -name M5 -origin {930 730}
+make nmos4 -name M6 -origin {930 890}
+make nmos4 -name M7 -origin {1390 790}
+make nmos4 -orient RX -name M8 -origin {1670 790}
+make nmos4 -orient RX -name M9 -origin {1530 940}
+make inout -name vdd -origin {1280 -250}
+make inout -name gnd -origin {1240 1400}
+make input -name A -origin {300 30}
+make input -orient RXY -name B -origin {2020 20}
+make input -name C -origin {530 240}
+make input -orient RXY -name D -origin {1770 240}
+make input -orient RXY -name E -origin {1780 370}
+make output -orient RXY -name Y -origin {280 550}
+  make_wire 1020 -10 1020 -40
+  make_wire 1300 -40 1300 -20
+  make_wire 1020 70 1020 80
+  make_wire 1300 80 1300 60
+  make_wire 920 200 920 150
+  make_wire 1170 80 1170 150
+  make_wire 1420 200 1420 150
+  make_wire 930 590 930 690
+  make_wire 1530 590 1530 700
+  make_wire 930 770 930 850
+  make_wire 1390 750 1390 700
+  make_wire 1670 700 1670 750
+  make_wire 1530 700 1390 700
+  make_wire 1530 700 1670 700
+  make_wire 1390 830 1390 860
+  make_wire 1670 860 1670 830
+  make_wire 930 930 930 1050
+  make_wire 1530 1050 1530 980
+  make_wire 1530 860 1390 860
+  make_wire 1530 860 1670 860
+  make_wire 1280 20 1300 20
+  make_wire 1280 -250 1170 -250
+  make_wire 1020 -40 1170 -40
+  make_wire 1170 -40 1300 -40
+  make_wire 1280 20 1280 30
+  make_wire 1170 -40 1170 30
+  make_wire 1170 30 1280 30
+  make_wire 1170 30 1020 30
+  make_wire 1020 80 1170 80
+  make_wire 1170 80 1300 80
+  make_wire 920 150 1170 150
+  make_wire 1170 150 1420 150
+  make_wire 1420 370 1200 370
+  make_wire 1200 370 1200 240
+  make_wire 1200 240 920 240
+  make_wire 1220 240 1220 130
+  make_wire 1220 130 1420 130
+  make_wire 1420 130 1420 -80
+  make_wire 1420 -80 1170 -80
+  make_wire 1170 -80 1170 -250
+  make_wire 1170 -80 1170 -40
+  make_wire 1220 240 1200 240
+  make_wire 1220 240 1420 240
+  make_wire 930 730 1240 730
+  make_wire 930 890 1240 890
+  make_wire 1240 890 1240 730
+  make_wire 1490 940 1240 940
+  make_wire 1240 940 1240 890
+  make_wire 1490 790 1390 790
+  make_wire 1490 790 1670 790
+  make_wire 1530 940 1490 940
+  make_wire 1530 860 1530 900
+  make_wire 930 1050 1240 1050
+  make_wire 1240 1050 1530 1050
+  make_wire 1490 790 1490 940
+  make_wire 380 730 870 730
+  make_wire 380 30 960 30
+  make_wire 380 30 300 30
+  make_wire 1930 1260 580 1260
+  make_wire 1930 20 1360 20
+  make_wire 1930 20 2020 20
+  make_wire 600 1120 1680 1120
+  make_wire 1680 1120 1680 940
+  make_wire 1680 940 1590 940
+  make_wire 600 240 860 240
+  make_wire 600 240 530 240
+  make_wire 1330 790 1310 790
+  make_wire 1310 790 1310 540
+  make_wire 1310 540 1870 540
+  make_wire 1870 290 1690 290
+  make_wire 1690 290 1690 240
+  make_wire 1690 240 1480 240
+  make_wire 1690 240 1770 240
+  make_wire 1730 790 1750 790
+  make_wire 1750 370 1480 370
+  make_wire 1750 370 1780 370
+  make_wire 1240 940 1240 1050
+  make_wire 600 240 600 1120
+  make_wire 1420 410 1420 510
+  make_wire 1240 1050 1240 1400
+  make_wire 1750 370 1750 790
+  make_wire 1870 290 1870 540
+  make_wire 580 890 580 1260
+  make_wire 380 30 380 730
+  make_wire 920 280 920 510
+  make_wire 580 890 870 890
+  make_wire 1930 20 1930 1260
+  make_wire 920 510 1230 510
+  make_wire 1230 510 1420 510
+  make_wire 930 590 1230 590
+  make_wire 1230 590 1530 590
+  make_wire 1230 550 280 550
+  make_wire 1230 550 1230 510
+  make_wire 1230 550 1230 590
+  make_wire 1420 330 1420 280
+}
+
+proc ICON_Expression_1 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x} {example_param 1.0}}
+icon_term -type input -origin {-100 -30} -name A
+icon_term -type input -origin {-100 -10} -name B
+icon_term -type input -origin {-100 10} -name C
+icon_term -type input -origin {-100 30} -name D
+icon_term -type input -origin {-100 50} -name E
+icon_term -type output -origin {100 -30} -name Y
+icon_term -type inout -origin {100 10} -name vdd
+icon_term -type inout -origin {100 30} -name gnd
+icon_property -origin {-90 -30} -label A
+icon_property -origin {-90 -10} -label B
+icon_property -origin {-90 10} -label C
+icon_property -origin {-90 30} -label D
+icon_property -origin {-90 50} -label E
+icon_property -origin {90 -30} -anchor e -label Y
+icon_property -origin {90 10} -anchor e -label vdd
+icon_property -origin {90 30} -anchor e -label gnd
+icon_property -origin {-90 -80} -label {$name}
+icon_property -origin {-90 -60} -label Expression_1
+  icon_line -100 -70 100 -70 100 70 -100 70 -100 -70
+icon_property -origin {-90 80} -label {example_param=$example_param}
+  icon_property -origin {-90 140} -type user -name name -default x
+  icon_property -origin {-90 160} -type user -name example_param -default 1.0
+}
+

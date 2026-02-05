@@ -1,0 +1,53 @@
+proc SCHEMATIC_Exp2_test {} {
+make global -name vdd -origin {810 170}
+make global -name gnd -origin {570 250}
+make output -name Y -origin {770 20}
+make input -name A -origin {320 20}
+make input -name B -origin {250 40}
+make input -name C -origin {200 60}
+make input -name D -origin {210 250}
+make input -name E -origin {420 250}
+make pulse -orient RY -name V0 -pulse_voltage 1.3V -origin {410 -60}
+make pulse -name V1 -pulse_voltage 1.3V -pulse_width 4ns -period 8ns -origin {310 130}
+make pulse -name V2 -pulse_voltage 1.3V -pulse_width 5ns -period 10ns -origin {220 130}
+make pulse -orient RY -name V3 -pulse_voltage 1.3V -pulse_width 6ns -period 12ns -origin {370 300}
+make pulse -orient RY -name V4 -pulse_voltage 1.3V -pulse_width 7ns -period 14ns -origin {450 300}
+  make_wire 220 90 220 60
+  make_wire 220 60 460 60
+  make_wire 220 60 200 60
+  make_wire 410 20 320 20
+  make_wire 410 20 460 20
+  make_wire 720 80 720 230
+  make_wire 120 230 120 -150
+  make_wire 220 230 120 230
+  make_wire 660 20 770 20
+  make_wire 810 60 810 170
+  make_wire 810 60 660 60
+  make_wire 570 230 720 230
+  make_wire 720 80 660 80
+  make_wire 450 100 460 100
+  make_wire 120 360 120 230
+  make_wire 450 340 450 360
+  make_wire 570 230 570 250
+  make_wire 410 -150 410 -100
+  make_wire 220 170 220 230
+  make_wire 120 -150 410 -150
+  make_wire 410 -20 410 20
+  make_wire 310 170 310 230
+  make_wire 310 40 310 90
+  make_wire 250 40 310 40
+  make_wire 460 40 310 40
+  make_wire 220 230 310 230
+  make_wire 570 230 310 230
+  make_wire 120 360 370 360
+  make_wire 450 360 370 360
+  make_wire 370 80 460 80
+  make_wire 370 340 370 360
+  make_wire 370 250 210 250
+  make_wire 370 250 370 80
+  make_wire 370 250 370 260
+  make_wire 450 250 420 250
+  make_wire 450 250 450 100
+  make_wire 450 250 450 260
+}
+

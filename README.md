@@ -179,7 +179,7 @@
 
 <img width="1366" height="768" alt="Screenshot (851)" src="https://github.com/user-attachments/assets/bd234491-f7a2-4a70-b991-6901f2549b56" />
 
-### Schematic Diagram 2
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (850)" src="https://github.com/user-attachments/assets/2c151a67-bea5-4c4b-a2c2-2c3e849a722e" />
 
@@ -193,7 +193,7 @@
 
 <img width="1366" height="768" alt="Screenshot (900)" src="https://github.com/user-attachments/assets/ecd41ce6-8ad6-4291-b960-63cefc5030a0" />
 
-### Schematic Diagram 2
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (901)" src="https://github.com/user-attachments/assets/4a036346-5275-4ea3-a891-d406d4960a20" />
 
@@ -207,7 +207,7 @@
 
 <img width="1366" height="768" alt="Screenshot (899)" src="https://github.com/user-attachments/assets/4521f6fd-b872-41b8-966b-ce5a74e7153a" />
 
-### Schematic Diagram 2
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (898)" src="https://github.com/user-attachments/assets/c4f54fc8-bbf9-4b41-9cc3-0833a0a17d92" />
 
@@ -222,7 +222,7 @@
 
 <img width="1366" height="768" alt="Screenshot (906)" src="https://github.com/user-attachments/assets/d541f3ed-3b26-40ea-9949-05f93991db74" />
 
-### Schematic Diagram 2
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (907)" src="https://github.com/user-attachments/assets/36e4505a-b03b-47ac-93a3-2c594535fa57" />
 

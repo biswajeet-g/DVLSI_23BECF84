@@ -98,14 +98,9 @@
 
 <img width="1366" height="768" alt="Screenshot (817)" src="https://github.com/user-attachments/assets/36db32b0-df24-4513-bd46-dc0079ff36b8" />
 
-
-
-## Schematic Diagram 2
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (815)" src="https://github.com/user-attachments/assets/1d00344d-6c7e-4a83-8761-5cf3ad37bbfd" />
-
-
-
 
 ## Simulation Results
 
@@ -117,16 +112,9 @@
 
 <img width="1366" height="768" alt="Screenshot (820)" src="https://github.com/user-attachments/assets/219481d1-5c9f-45f1-8c6c-11ab2ecb5b22" />
 
-
-
-
-## Schematic Diagram 2
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (822)" src="https://github.com/user-attachments/assets/62966016-6330-46dd-ab3d-ebbad429d52b" />
-
-
-
-
 
 ## Simulation Results
 
@@ -135,11 +123,11 @@
 
 # Experiment 5 : CMOS Full Adder
 
-## Schematic 1 of Half Adder
+## Schematic Diagram of Half Adder
 
 <img width="1366" height="768" alt="Screenshot (835)" src="https://github.com/user-attachments/assets/89ede2eb-390a-488a-b683-60f7e05f17c7" />
 
-## Schematic 2 of Half Adder
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (834)" src="https://github.com/user-attachments/assets/510f0696-ab58-439c-8e73-cc521cc86f3d" />
 
@@ -147,7 +135,7 @@
 
 <img width="1366" height="768" alt="Screenshot (832)" src="https://github.com/user-attachments/assets/0e652342-8c13-482a-98c5-277168b6d1d1" />
 
-## Schematic 1 of Full Adder
+## Schematic Diagram of Full Adder
 
 <img width="1366" height="768" alt="Screenshot (838)" src="https://github.com/user-attachments/assets/06eb993c-0ff8-4b4f-99d8-71d8d657ae3e" />
 
@@ -161,7 +149,7 @@
 
 <img width="1366" height="768" alt="Screenshot (843)" src="https://github.com/user-attachments/assets/ceefde04-9315-4f3e-ba43-78400b35f8f9" />
 
-### Schematic of Full Subtractor 
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (844)" src="https://github.com/user-attachments/assets/172eaeed-e44e-4552-ac7f-4a0f56d711bb" />
 
@@ -177,7 +165,7 @@
 
 <img width="1366" height="768" alt="Screenshot (846)" src="https://github.com/user-attachments/assets/4fd74f23-070b-4176-818e-333130591b78" />
 
-### Schematic Diagram 2
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (845)" src="https://github.com/user-attachments/assets/3af4de58-65ab-422a-a9df-646ae2992ebf" />
 

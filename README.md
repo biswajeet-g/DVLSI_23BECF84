@@ -14,6 +14,7 @@
 <img width="1366" height="768" alt="Screenshot (775)" src="https://github.com/user-attachments/assets/d7849e6f-f49b-4b41-8e12-fe0f01f20678" />
 
 ## Schematic Diagram Testbench
+
 <img width="1366" height="768" alt="Screenshot (773)" src="https://github.com/user-attachments/assets/83c20512-a06e-400e-b640-7eafa2c8d3b5" />
 
 ## Simulation Result 
@@ -23,12 +24,12 @@
 
 # Experiment 2 : CMOS NAND
 
-## CMOS NAND Schematic -1 
+## Schematic Diagram 1
 
 <img width="1366" height="768" alt="Screenshot (786)" src="https://github.com/user-attachments/assets/d35e639b-e720-4c5a-89c4-dfe50d66d1dc" />
 
 
-## CMOS NAND Schematic - 2
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (787)" src="https://github.com/user-attachments/assets/5ea49df5-072d-4151-b927-b5143b326949" />
 
@@ -45,7 +46,7 @@
 
 
 
-## Schematic Diagram 2
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (803)" src="https://github.com/user-attachments/assets/dde121ae-5892-42c8-abd3-6c1198418510" />
 
@@ -64,7 +65,7 @@
 <img width="1366" height="768" alt="Screenshot (807)" src="https://github.com/user-attachments/assets/e390795b-6ba3-4c9e-8b82-3f4a4341a149" />
 
 
-## Schematic Diagram 2
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (806)" src="https://github.com/user-attachments/assets/0957c6f9-0a0e-40c1-8be9-610d714ccbaa" />
 
@@ -81,7 +82,7 @@
 
 
 
-## Schematic Diagram 2
+## Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (829)" src="https://github.com/user-attachments/assets/37fd394c-4479-4daa-ab8f-05a63647c6de" />
 

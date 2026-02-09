@@ -1,6 +1,6 @@
 # Experiment 9: Boolean Expressions
 
-## 1. Inverse of [ AB + C(D+E) ]
+## 1. Inverse of [AB + C(D+E)]
 
 ### Schematic Diagram 1 
 

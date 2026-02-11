@@ -6,7 +6,7 @@
 
 <img width="1366" height="768" alt="Screenshot (846)" src="https://github.com/user-attachments/assets/4fd74f23-070b-4176-818e-333130591b78" />
 
-### Schematic Diagram 2
+### Schematic Diagram Testbench
 
 <img width="1366" height="768" alt="Screenshot (845)" src="https://github.com/user-attachments/assets/3af4de58-65ab-422a-a9df-646ae2992ebf" />
 
@@ -34,7 +34,7 @@
 
 <img width="1366" height="768" alt="Screenshot (900)" src="https://github.com/user-attachments/assets/ecd41ce6-8ad6-4291-b960-63cefc5030a0" />
 
-### Schematic Diargram 2
+### Schematic Diargram Testbench
 
 <img width="1366" height="768" alt="Screenshot (901)" src="https://github.com/user-attachments/assets/4a036346-5275-4ea3-a891-d406d4960a20" />
 

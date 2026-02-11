@@ -1,0 +1,75 @@
+proc SCHEMATIC_SR_Latch1 {} {
+make input -name S -origin {1170 -40}
+make input -name R -origin {1170 280}
+make output -name Qn -origin {2120 -40}
+make output -name Qn_1 -origin {2110 280}
+make inout -name vdd -origin {1990 450}
+make inout -name gnd -origin {1770 490}
+make inv_1 -name xi0 -origin {1370 -30}
+make inv_1 -name xi1 -origin {1380 290}
+make nand_1_sue -name xi2 -origin {1830 -30}
+make nand_1_sue -name xi3 -origin {1790 290}
+  make_wire 1270 -40 1170 -40
+  make_wire 1170 280 1280 280
+  make_wire 1730 -40 1470 -40
+  make_wire 1730 -20 1630 -20
+  make_wire 1630 -20 1630 190
+  make_wire 1630 190 1990 190
+  make_wire 1990 280 1890 280
+  make_wire 1990 280 2110 280
+  make_wire 1630 210 1970 210
+  make_wire 1970 -40 1930 -40
+  make_wire 1970 -40 2120 -40
+  make_wire 1470 0 1530 0
+  make_wire 1930 0 2000 0
+  make_wire 1480 320 1530 320
+  make_wire 1530 320 1530 0
+  make_wire 1530 320 1530 430
+  make_wire 1890 320 2000 320
+  make_wire 1470 20 1500 20
+  make_wire 1950 20 1930 20
+  make_wire 1480 340 1500 340
+  make_wire 1500 340 1500 20
+  make_wire 1500 340 1500 460
+  make_wire 2000 0 2000 320
+  make_wire 2000 320 2000 430
+  make_wire 1890 340 1950 340
+  make_wire 1950 340 1950 460
+  make_wire 1950 340 1950 20
+  make_wire 1480 280 1600 280
+  make_wire 1600 280 1600 300
+  make_wire 1600 300 1690 300
+  make_wire 1690 280 1630 280
+  make_wire 1630 280 1630 210
+  make_wire 1990 430 1990 450
+  make_wire 1990 430 2000 430
+  make_wire 1990 430 1530 430
+  make_wire 1770 460 1770 490
+  make_wire 1770 460 1500 460
+  make_wire 1770 460 1950 460
+  make_wire 1970 -40 1970 210
+  make_wire 1990 190 1990 280
+}
+
+proc ICON_SR_Latch1 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x} {example_param 1.0}}
+icon_term -type input -origin {-100 -20} -name S
+icon_term -type input -origin {-100 0} -name R
+icon_term -type output -origin {100 -20} -name Qn
+icon_term -type output -origin {100 0} -name Qn_1
+icon_term -type inout -origin {100 40} -name vdd
+icon_term -type inout -origin {100 60} -name gnd
+icon_property -origin {-90 -20} -label S
+icon_property -origin {-90 0} -label R
+icon_property -origin {90 -20} -anchor e -label Qn
+icon_property -origin {90 0} -anchor e -label Qn_1
+icon_property -origin {90 40} -anchor e -label vdd
+icon_property -origin {90 60} -anchor e -label gnd
+icon_property -origin {-90 -70} -label {$name}
+icon_property -origin {-90 -50} -label SR_Latch1
+  icon_line -100 -60 100 -60 100 80 -100 80 -100 -60
+icon_property -origin {-90 90} -label {example_param=$example_param}
+  icon_property -origin {-90 150} -type user -name name -default x
+  icon_property -origin {-90 170} -type user -name example_param -default 1.0
+}
+

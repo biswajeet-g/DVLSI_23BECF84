@@ -1,0 +1,83 @@
+proc SCHEMATIC_SR_flipflop2 {} {
+make input -name S -origin {1010 -50}
+make input -name R -origin {1000 290}
+make output -name Qn -origin {1960 -50}
+make output -name Qn_1 -origin {1950 270}
+make inout -name vdd -origin {1830 440}
+make inout -name gnd -origin {1610 480}
+make nand_1_sue -name xi2 -origin {1670 -40}
+make nand_1_sue -name xi3 -origin {1630 280}
+make input -name clk -origin {990 120}
+make nand_1_sue -name xi0 -origin {1210 -40}
+make nand_1_sue -name xi1 -origin {1220 280}
+  make_wire 1110 -50 1010 -50
+  make_wire 1570 -50 1310 -50
+  make_wire 1570 -30 1470 -30
+  make_wire 1470 -30 1470 180
+  make_wire 1470 180 1830 180
+  make_wire 1830 270 1730 270
+  make_wire 1830 270 1950 270
+  make_wire 1470 200 1810 200
+  make_wire 1810 -50 1770 -50
+  make_wire 1810 -50 1960 -50
+  make_wire 1310 -10 1370 -10
+  make_wire 1770 -10 1840 -10
+  make_wire 1320 310 1370 310
+  make_wire 1370 310 1370 -10
+  make_wire 1370 310 1370 420
+  make_wire 1730 310 1840 310
+  make_wire 1310 10 1340 10
+  make_wire 1790 10 1770 10
+  make_wire 1320 330 1340 330
+  make_wire 1340 330 1340 10
+  make_wire 1340 330 1340 450
+  make_wire 1840 -10 1840 310
+  make_wire 1840 310 1840 420
+  make_wire 1730 330 1790 330
+  make_wire 1790 330 1790 450
+  make_wire 1790 330 1790 10
+  make_wire 1320 270 1440 270
+  make_wire 1440 270 1440 290
+  make_wire 1440 290 1530 290
+  make_wire 1530 270 1470 270
+  make_wire 1470 270 1470 200
+  make_wire 1830 420 1830 440
+  make_wire 1830 420 1840 420
+  make_wire 1830 420 1370 420
+  make_wire 1610 450 1610 480
+  make_wire 1610 450 1340 450
+  make_wire 1610 450 1790 450
+  make_wire 1810 -50 1810 200
+  make_wire 1830 180 1830 270
+  make_wire 1000 290 1120 290
+  make_wire 1110 -30 1070 -30
+  make_wire 1070 270 1120 270
+  make_wire 1070 120 990 120
+  make_wire 1070 120 1070 -30
+  make_wire 1070 120 1070 270
+}
+
+proc ICON_SR_flipflop2 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name x} {example_param 1.0}}
+icon_term -type input -origin {-100 -20} -name S
+icon_term -type input -origin {-100 0} -name R
+icon_term -type input -origin {-100 20} -name clk
+icon_term -type output -origin {100 -20} -name Qn
+icon_term -type output -origin {100 0} -name Qn_1
+icon_term -type inout -origin {100 40} -name vdd
+icon_term -type inout -origin {100 60} -name gnd
+icon_property -origin {-90 -20} -label S
+icon_property -origin {-90 0} -label R
+icon_property -origin {-90 20} -label clk
+icon_property -origin {90 -20} -anchor e -label Qn
+icon_property -origin {90 0} -anchor e -label Qn_1
+icon_property -origin {90 40} -anchor e -label vdd
+icon_property -origin {90 60} -anchor e -label gnd
+icon_property -origin {-90 -70} -label {$name}
+icon_property -origin {-90 -50} -label SR_flipflop2
+  icon_line -100 -60 100 -60 100 80 -100 80 -100 -60
+icon_property -origin {-90 90} -label {example_param=$example_param}
+  icon_property -origin {-90 150} -type user -name name -default x
+  icon_property -origin {-90 170} -type user -name example_param -default 1.0
+}
+

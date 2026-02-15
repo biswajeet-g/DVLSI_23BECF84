@@ -23,9 +23,7 @@
 
 <img width="1366" height="768" alt="Screenshot (830)" src="https://github.com/user-attachments/assets/2de589da-2b17-4b15-bef1-307435279312" />
 
-
-
-## Schematic Diagram 2
+## Schematic Testbench
 
 <img width="1366" height="768" alt="Screenshot (829)" src="https://github.com/user-attachments/assets/37fd394c-4479-4daa-ab8f-05a63647c6de" />
 

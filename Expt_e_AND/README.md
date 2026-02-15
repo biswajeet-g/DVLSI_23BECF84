@@ -39,14 +39,9 @@
 
 <img width="1366" height="768" alt="Screenshot (817)" src="https://github.com/user-attachments/assets/36db32b0-df24-4513-bd46-dc0079ff36b8" />
 
-
-
-## Schematic Diagram 2
+## Schematic Testbench
 
 <img width="1366" height="768" alt="Screenshot (815)" src="https://github.com/user-attachments/assets/1d00344d-6c7e-4a83-8761-5cf3ad37bbfd" />
-
-
-
 
 ## Simulation Results
 

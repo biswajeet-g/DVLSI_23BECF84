@@ -1,7 +1,7 @@
 # Digital VLSI Design
 
 - ### NAME : BISWAJEET GANTHIA
-- ### ECE-A1
+- ### Branch : ECE-A1
 - ### SEMESTER : 6
 - ### ROLL NO: 19
 - ### SIC : 23BECF84
